@@ -1,4 +1,5 @@
-node_modules
-rethinkdb_data
-rethinkdb.exe
-debug.bat
+/node_modules
+/rethinkdb_data
+/rethinkdb.exe
+/debug.bat
+/build
