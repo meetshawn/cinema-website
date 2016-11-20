@@ -9,12 +9,15 @@ module.exports = {
   },
   plugins: {
     pug: {
-      staticPretty: true,             // "pretty" for files in staticBasedir
-      inlineRuntimeFunctions: false,  // will use the global `pug` variable
-      compileDebug: true,             // except for brunch `optimize` mode (production)
-      sourceMap: true,                 // ...if Brunch sourceMaps option is enabled
+      staticPretty: true,
+      inlineRuntimeFunctions: false,
+      compileDebug: true,
+      sourceMap: true,
       cache: false
     },
     babel: { presets: ['es2015'] }
+  },
+  watcher: {
+    usePolling: true
   }
 };
