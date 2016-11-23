@@ -1,0 +1,121 @@
+.uk-grid
+	.uk-width-3-10
+		.uk-panel.uk-panel-box
+			h3.uk-panel-title Filter
+			ul.uk-nav.uk-nav-side.uk-nav-parent-icon(data-uk-nav="")
+				li.uk-active
+					a(href="#") All
+				each val, index in {'Action':'/', 'Adventure':'/', 'Animation':'/', 'Biography':'/', 'Comedy':'/', 'Crime':'/', 'Documentary':'/', 'Drama':'/', 'Family':'/', 'Fantasy':'/', 'History':'/', 'Horror':'/', 'Musical':'/', 'Mystery':'/', 'Romance':'/', 'Sci-Fi':'/', 'Sport':'/', 'Thriller':'/', 'War':'/'}
+					li
+						a(ic-get-from=val ic-target="#content")= index
+	.uk-width-7-10
+		.uk-text-right(style="margin-bottom: 30px")
+			form.uk-form Sort by 
+				select
+					option name
+					option category
+		.uk-grid.uk-grid-medium(data-uk-grid-margin)
+			.uk-width-1-4
+				a
+					figure.uk-overlay.uk-overlay-hover
+						img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_44921_2x.jpg")
+						figcaption.uk-overlay-panel.uk-overlay-background.uk-overlay-bottom.uk-overlay-slide-bottom
+							p Your Name
+								br
+								span(style="color: #FFC107")
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star-half-o
+									i.uk-icon-star-o
+			.uk-width-1-4
+				a
+					figure.uk-overlay.uk-overlay-hover
+						img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_44045_2x.jpg")
+						figcaption.uk-overlay-panel.uk-overlay-background.uk-overlay-bottom.uk-overlay-slide-bottom
+							p Doctor Strange
+								br
+								span(style="color: #FFC107")
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star-half-o
+									i.uk-icon-star-o
+			.uk-width-1-4
+				a
+					figure.uk-overlay.uk-overlay-hover
+						img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_43200.jpg")
+						figcaption.uk-overlay-panel.uk-overlay-background.uk-overlay-bottom.uk-overlay-slide-bottom
+							p Fantastic Beasts and Where to Find Them
+								br
+								span(style="color: #FFC107")
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star-half-o
+									i.uk-icon-star-o
+			.uk-width-1-4
+				a
+					figure.uk-overlay.uk-overlay-hover
+						img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_44222_2x.jpg")
+						figcaption.uk-overlay-panel.uk-overlay-background.uk-overlay-bottom.uk-overlay-slide-bottom
+							p Billy Lynn's Long Halftime Walk
+								br
+								span(style="color: #FFC107")
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star-half-o
+									i.uk-icon-star-o
+			.uk-width-1-4
+				a
+					figure.uk-overlay.uk-overlay-hover
+						img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_44184_2x.jpg")
+						figcaption.uk-overlay-panel.uk-overlay-background.uk-overlay-bottom.uk-overlay-slide-bottom
+							p Inferno
+								br
+								span(style="color: #FFC107")
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star-half-o
+									i.uk-icon-star-o
+			.uk-width-1-4
+				a
+					figure.uk-overlay.uk-overlay-hover
+						img(src="http://api.hkmovie6.com/hkmovies/images/movies/movies_44733_2x.jpg")
+						figcaption.uk-overlay-panel.uk-overlay-background.uk-overlay-bottom.uk-overlay-slide-bottom
+							p The Girl on the Train
+								br
+								span(style="color: #FFC107")
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star-half-o
+									i.uk-icon-star-o
+			.uk-width-1-4
+				a
+					figure.uk-overlay.uk-overlay-hover
+						img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_44944_2x.jpg")
+						figcaption.uk-overlay-panel.uk-overlay-background.uk-overlay-bottom.uk-overlay-slide-bottom
+							p Rage
+								br
+								span(style="color: #FFC107")
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star-half-o
+									i.uk-icon-star-o
+			.uk-width-1-4
+				a
+					figure.uk-overlay.uk-overlay-hover
+						img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_44033_2x.jpg")
+						figcaption.uk-overlay-panel.uk-overlay-background.uk-overlay-bottom.uk-overlay-slide-bottom
+							p Trolls
+								br
+								span(style="color: #FFC107")
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star
+									i.uk-icon-star-half-o
+									i.uk-icon-star-o
