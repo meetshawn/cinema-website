@@ -7,9 +7,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "brunch-start": "brunch watch --server",
-    "brunch-watch": "brunch watch",
-    "brunch-prod": "brunch build --production"
+    "harp": "harp server static --port 9999"
   },
   "dependencies": {
     "bcrypt": "^0.8.7",
@@ -24,14 +22,6 @@
     "thinky": "^2.3.8"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^2.0.0",
-    "babel-brunch": "~6.0.0",
-    "babel-preset-es2015": "~6.3.13",
-    "brunch": "^2.4.0",
-    "clean-css-brunch": "^2.0.0",
-    "css-brunch": "^2.0.0",
-    "javascript-brunch": "^2.0.0",
-    "pugjs-brunch": "^2.8.5",
-    "uglify-js-brunch": "^2.0.0"
+    "harp": "^0.22.0"
   }
 }

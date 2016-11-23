@@ -3,7 +3,11 @@
     fieldset
       legend Register
       .uk-form-row
+<<<<<<< HEAD
+        label(for='email') Email
+=======
         label(for='username') Username
+>>>>>>> origin/master
         br
         input(type='text', name='username')
       .uk-form-row
@@ -11,6 +15,23 @@
         br
         input(type='password', name='password')
       .uk-form-row
+<<<<<<< HEAD
+        label(for='phone') Phone
+        br
+        input(type='number', name='phone')
+      .uk-form-row
+        label(for='address') Address
+        br
+        input(type='text', name='address')
+      .uk-form-row
+        label(for='dob') Date of Birth
+        br
+        input(type="text" name='dob' data-uk-datepicker="{format:'DD/MM/YYYY'}")
+      .uk-form-row
+        input.uk-button(type='submit', value='Register')
+      .uk-form-row
+        a(ic-get-from="/signin.html" ic-target="#content") Sign in
+=======
         label(for='email') Email
         br
         input(type='email', name='email')
@@ -22,3 +43,4 @@
         input.uk-button(type='submit', value='Register')
       .uk-form-row
         a(href='/signin.html') Sign in
+>>>>>>> origin/master
