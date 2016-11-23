@@ -1,0 +1,22 @@
+.uk-width-medium-1-3.uk-container-center.uk-panel.uk-panel-box
+  form.uk-form(action="" method="post")
+    fieldset
+      legend Sign In
+      .uk-form-row
+        label(for='email-address') Email
+        br
+        input(type='email', name='email')
+      .uk-form-row
+        label(for='password') Password
+        br
+        input(type='password', name='password')
+      .uk-form-row
+        label
+          input(type='checkbox')
+          |  Remember me
+      .uk-form-row
+        input.uk-button(type='submit', value='Sign in')
+      .uk-form-row
+        a(ic-get-from="/register.html" ic-target="#content") Register
+        br
+        a(ic-get-from="/forgot-password.html" ic-target="#content") Forgot your password?

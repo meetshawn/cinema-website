@@ -1,0 +1,104 @@
+.uk-grid
+	.uk-width-3-10
+		.uk-panel.uk-panel-box
+			h3.uk-panel-title Filter
+			ul.uk-nav.uk-nav-side.uk-nav-parent-icon(data-uk-nav="")
+				li.uk-active
+					a(href="#") All
+				each val, index in {'Action':'/', 'Adventure':'/', 'Animation':'/', 'Biography':'/', 'Comedy':'/', 'Crime':'/', 'Documentary':'/', 'Drama':'/', 'Family':'/', 'Fantasy':'/', 'History':'/', 'Horror':'/', 'Musical':'/', 'Mystery':'/', 'Romance':'/', 'Sci-Fi':'/', 'Sport':'/', 'Thriller':'/', 'War':'/'}
+					li
+						a(ic-get-from=val ic-target="#content")= index
+	.uk-width-7-10
+		.uk-text-right(style="margin-bottom: 30px")
+			form.uk-form Sort by 
+				select
+					option name
+					option category
+		.uk-panel.uk-panel-divider
+			.uk-grid(data-uk-grid-margin)
+				.uk-width-1-4
+					img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_44921_2x.jpg")
+				.uk-width-3-4
+					h2.uk-text-bold Your Name
+					dl.uk-description-list-horizontal
+						dt Genre
+						dd Animation
+						dt Run Time
+						dd 106 minutes
+						dt Category
+						dd I
+						dt Language / Subtitle
+						dd Japanese (Sub: Chinese, English)
+						dt Release Date
+						dd 11 Nov, 2016
+						dt Remaining Seat
+						dd
+							.uk-badge.uk-badge-success Many
+					form.uk-form
+						.uk-form-row
+							select
+								option Thu, Nov 24, 09:10 AM, House 2 $85
+								option Thu, Nov 24, 02:00 PM, House 3 $95
+								option Thu, Nov 24, 04:30 PM, House 7 $95
+								option Fri, Nov 25, 10:25 AM, House 5 $60
+								option Fri, Nov 25, 03:50 PM, House 4 $95
+								option Fri, Nov 25, 09:40 PM, House 4 $95
+							button.uk-button.uk-button-primary Buy Ticket
+			.uk-grid(data-uk-grid-margin)
+				.uk-width-1-4
+					img(src="//api.hkmovie6.com/hkmovies/images/movies/movies_44045_2x.jpg")
+				.uk-width-3-4
+					h2.uk-text-bold Your Name
+					dl.uk-description-list-horizontal
+						dt Genre
+						dd Action
+						dt Run Time
+						dd 115 minutes
+						dt Category
+						dd IIA
+						dt Language / Subtitle
+						dd English (Sub: Chinese)
+						dt Release Date
+						dd 27 Oct, 2016
+						dt Remaining Seat
+						dd
+							.uk-badge.uk-badge-warning Moderate
+					form.uk-form
+						.uk-form-row
+							select
+								option Thu, Nov 24, 09:10 AM, House 2 $85
+								option Thu, Nov 24, 02:00 PM, House 3 $95
+								option Thu, Nov 24, 04:30 PM, House 7 $95
+								option Fri, Nov 25, 10:25 AM, House 5 $60
+								option Fri, Nov 25, 03:50 PM, House 4 $95
+								option Fri, Nov 25, 09:40 PM, House 4 $95
+							button.uk-button.uk-button-primary Buy Ticket
+			.uk-grid(data-uk-grid-margin)
+				.uk-width-1-4
+					img(src="http://api.hkmovie6.com/hkmovies/images/movies/movies_43200.jpg")
+				.uk-width-3-4
+					h2.uk-text-bold Your Name
+					dl.uk-description-list-horizontal
+						dt Genre
+						dd Drama
+						dt Run Time
+						dd 133 minutes
+						dt Category
+						dd IIA
+						dt Language / Subtitle
+						dd English (Sub: Chinese)
+						dt Release Date
+						dd 17 Nov, 2016
+						dt Remaining Seat
+						dd
+							.uk-badge.uk-badge-danger Few
+					form.uk-form
+						.uk-form-row
+							select
+								option Thu, Nov 24, 09:10 AM, House 2 $85
+								option Thu, Nov 24, 02:00 PM, House 3 $95
+								option Thu, Nov 24, 04:30 PM, House 7 $95
+								option Fri, Nov 25, 10:25 AM, House 5 $60
+								option Fri, Nov 25, 03:50 PM, House 4 $95
+								option Fri, Nov 25, 09:40 PM, House 4 $95
+							button.uk-button.uk-button-primary Buy Ticket

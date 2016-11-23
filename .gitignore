@@ -3,4 +3,6 @@
 /rethinkdb.exe
 /debug.bat
 /build
-insomnia.json
+/insomnia.json
+/kill.bat
+/www

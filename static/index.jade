@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title Ajay Cinema
+
+        link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/uikit.gradient.min.css")
+        link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/slideshow.gradient.css")
+        link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/slidenav.css")
+        link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/dotnav.gradient.css")
+        link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/search.gradient.min.css")
+        link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/components/datepicker.gradient.min.css")
+        <!--[if lt IE 9]>
+        script(src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js")
+        <![endif]-->
+
+body
+    nav.uk-navbar
+        .uk-width-3-4.uk-container-center
+            a.uk-navbar-brand(ic-get-from="/home.html" ic-target="#content") Ajay Cinema
+            ul.uk-navbar-nav
+                li
+                    a(ic-get-from="/showing.html" ic-target="#content") Now Showing
+                li
+                    a(ic-get-from="/upcoming.html" ic-target="#content") Upcoming
+                li.uk-parent(data-uk-dropdown aria-haspopup="true" aria-expanded="false")
+                    a(ic-get-from="/news.html" ic-target="#content") News
+                    .uk-dropdown.uk-dropdown-navbar.uk-dropdown-bottom(aria-hidden="true" tabindex="" style="top: 20px; left: 0px;")
+                        ul.uk-nav.uk-nav-navbar
+                            li
+                                a(ic-get-from="/promotions.html" ic-target="#content") Promotions
+                            li
+                                a(ic-get-from="/festivals-and-programs.html" ic-target="#content") Festivals & Programs
+            .uk-navbar-flip
+                .uk-navbar-content.uk-hidden-small
+                    form.uk-search.uk-margin-remove.uk-display-inline-block(data-uk-search="{source:'my-results.json'}")
+                        input.uk-search-field(type="search" style="background-color: #e9e9e9; border-radius: 5px;" placeholder="")
+                        button.uk-button Search
+                ul.uk-navbar-nav
+                    each val, index in {'Profile':'/profile.html', 'Sign In':'/signin.html', 'Register':'/register.html'}
+                        li
+                            a(ic-get-from=val ic-target="#content")= index
+
+    main#content.uk-width-3-4.uk-container-center(ic-get-from="/home.html" ic-trigger-on="load" style="margin-top: 30px; min-height: 90vh;")
+
+    footer(style="margin-top: 30px; background-color: #eee;").uk-panel
+        .uk-width-3-4.uk-container-center
+            p.uk-text-center(style="padding-top: 15px;") Copyright © 2009-2016 Ajay Cinema Ltd. All rights reserved.
+  
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/intercooler-js/1.0.2/intercooler.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/uikit.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/core/grid.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/components/grid.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/components/slideshow-fx.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/components/slideshow.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/components/search.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/js/components/datepicker.min.js")
