@@ -23,7 +23,7 @@ app.use(session({
   secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false } //TODO: change to secure, with nginx proxy
+  cookie: { secure: true } //TODO: change to secure, with nginx proxy
 }));
 app.use(i18n.init);
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -33,7 +33,7 @@ app.use(passport.initialize());
 app.use(authRoutes);
 app.use(movieRoutes);
 
-app.use(express.static(path.join(__dirname, 'build'))); //TODO: disable for production
+//app.use(express.static(path.join(__dirname, 'build'))); //TODO: disable for production
 
 var server = http.createServer(app);
 server.listen(8888);
