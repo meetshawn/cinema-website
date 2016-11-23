@@ -16,8 +16,5 @@ module.exports = {
       cache: false
     },
     babel: { presets: ['es2015'] }
-  },
-  watcher: {
-    usePolling: true
   }
 };

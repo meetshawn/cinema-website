@@ -4,7 +4,10 @@ var passport      = require('passport'),
     
 var users = require('../modules/users');
 
-passport.use(new LocalStrategy(verify));
+passport.use(new LocalStrategy({
+  usernameField: 'email',
+  passwordField: 'password'
+}, verify));
 
 passport.serializeUser(function(user, done) {
   done(null, user.id);
