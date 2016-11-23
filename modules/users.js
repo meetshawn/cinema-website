@@ -6,7 +6,7 @@ users.exists = function(username){
   var deferred = new Promise(_exists);
   
   function _exists(resolve, reject){
-    User.filter({ username: username }).limit(1).run()
+    User.filter({ email: username }).limit(1).run()
       .then(success)
       .error(error);
     
@@ -52,7 +52,7 @@ users.getByUsername = function(username){
   var deferred = new Promise(_get);
   
   function _get(resolve, reject){
-    User.filter({ username: username }).limit(1).run()
+    User.filter({ email: username }).limit(1).run()
       .then(success)
       .error(error);
     
@@ -74,7 +74,6 @@ users.create = function(fields){
   
   function _create(resolve, reject){
     var user = new User({
-      username: fields.username,
       password: fields.password,
       email: fields.email,
       phone_number: (fields.phone_number || null),
