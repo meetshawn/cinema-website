@@ -16,6 +16,7 @@ var app = express();
 var passport    = require('./modules/passport'),
     authRoutes  = require('./routes/authentication'),
     movieRoutes = require('./routes/movies');
+    checkoutRoutes = require('./routes/checkout');
 
 app.set('view engine', 'pug');
 
@@ -23,11 +24,17 @@ app.use(session({
   secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: true } //TODO: change to secure, with nginx proxy
+  cookie: { secure: true }
 }));
 app.use(i18n.init);
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(expressValidator());
+app.use(expressValidator({
+  customValidators: {
+    isArray: function(value){
+      return Array.isArray(value);
+    }
+  }
+}));
 app.use(passport.initialize());
 
 app.use(authRoutes);
